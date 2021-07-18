@@ -139,10 +139,6 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto; }
-
 /* CSS Reset end */
 .d-flex {
   display: -webkit-box;
@@ -179,9 +175,16 @@ img {
 .mb-4 {
   margin-bottom: 32px; }
 
+.mb-5 {
+  margin-bottom: 40px; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto; }
 
 h2 {
   color: #650300;
@@ -189,6 +192,7 @@ h2 {
   text-align: center;
   font-weight: bold; }
 
+/* header */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,29 +205,21 @@ h2 {
           align-items: center;
   background-color: #aa0601;
   padding: 30px 88px; }
-
-.logo a {
-  display: block;
-  width: 80px;
-  height: 48px;
-  background: url(../images/logo.png) no-repeat;
-  /* 圖片取代文字技巧 */
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .menu li {
+  .header .logo a {
+    display: block;
+    width: 80px;
+    height: 48px;
+    background: url(../images/logo.png) no-repeat;
+    /* 圖片取代文字技巧 */
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden; }
+  .header li a {
     font-size: 20px;
-    line-height: 30px; }
-  .menu li a {
     padding: 9px 32px;
     display: block;
     text-align: center; }
-  .menu li a:hover {
+  .header li a:hover {
     color: silver; }
 
 /* content */
@@ -318,6 +314,59 @@ h2 {
     height: 455px;
     opacity: 0.6;
     background-image: url(../images/product-9.png); }
+
+.recommend {
+  padding: 60px 0 80px 0; }
+  .recommend .recommend-cardList {
+    margin-top: 40px; }
+  .recommend .recommend-card {
+    width: 255px;
+    height: 460px;
+    border: 1px solid #dee2e6;
+    -webkit-box-shadow: 0 2px 6px #dee2e6;
+            box-shadow: 0 2px 6px #dee2e6; }
+    .recommend .recommend-card img {
+      display: block;
+      width: 255px;
+      height: 256px; }
+  .recommend .recommend-card-body {
+    padding: 16px; }
+    .recommend .recommend-card-body div {
+      height: 151px; }
+  .recommend .recommend-card-body h4 {
+    font-size: 14px; }
+  .recommend .date {
+    color: #707070; }
+
+.contact-us {
+  padding: 60px 0 80px 0;
+  background-color: #aa06010d; }
+  .contact-us .wrap {
+    max-width: 730px;
+    margin: 0 auto; }
+  .contact-us p {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 20px; }
+  .contact-us .contact-formList input {
+    width: 730px;
+    padding: 12px 16px; }
+  .contact-us .contact-formList textarea {
+    width: 730px;
+    height: 136px;
+    padding: 12px 16px; }
+  .contact-us .submit {
+    display: inline-block;
+    width: 350px;
+    height: 54px;
+    background-color: #aa0601;
+    color: #fff;
+    border: none;
+    margin: 0 190px; }
+  .contact-us .submit:hover {
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer; }
 
 /* footer */
 .footer {
