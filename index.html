@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    首頁
+    眼鏡電商
   </title>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -37,22 +37,22 @@
     <h2>用專業的心，做專業的事</h2>
     <ul class="service-content-cardList d-flex">
       <li class="service-content-card">
-        <img src="./assets/images/icon-dollar.svg" class="mb-3" alt="dollar">
+        <img src="./assets/images/icon-dollar.svg" class="mb-2" alt="dollar">
         <h4 class="mb-1">單一價格</h4>
         <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
       </li>
       <li class="service-content-card">
-        <img src="./assets/images/icon-clock.svg" class="mb-3" alt="clock">
+        <img src="./assets/images/icon-clock.svg" class="mb-2" alt="clock">
         <h4 class="mb-1">20 分鐘即可取件</h4>
         <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
       </li>
       <li class="service-content-card">
-        <img src="./assets/images/icon-heart.svg" class="mb-3" alt="heart">
+        <img src="./assets/images/icon-heart.svg" class="mb-2" alt="heart">
         <h4 class="mb-1">安心售後服務</h4>
         <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
       </li>
       <li class="service-content-card">
-        <img src="./assets/images/icon-glasses.svg" class="mb-3" alt="glasses">
+        <img src="./assets/images/icon-glasses.svg" class="mb-2" alt="glasses">
         <h4 class="mb-1">關於鏡片</h4>
         <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
       </li>
@@ -148,28 +148,33 @@
   </div>
 </div>
 <div class="contact-us">
-  <div class="wrap">
+  <form class="wrap">
     <h2>聯絡我們</h2>
     <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-    <ul class="contact-formList">
-      <li class="mb-2">姓名<br>
-        <input type="text" placeholder="陳小明">
-      </li>
-      <li class="mb-2">聯絡電話<br>
-        <input type="text" placeholder="0912-345-678">
-      </li>
-      <li class="mb-2">電子郵件<br>
-        <input type="text" placeholder="example@email.com">
-      </li>
+    <div class="from-group mb-2">
+      <label for="name">姓名</label>
+      <input type="text" id="name" placeholder="陳小明" value="">
+    </div>
+    <div class="from-group mb-2">
+      <label for="tel">聯絡電話</label>
+      <input type="text" id="tel" placeholder="0912-345-678" value="">
+    </div>
+    <div class="from-group mb-2">
+      <label for="mail">電子郵件</label>
+      <input type="text" id="mail" placeholder="example@gmail.com" value="">
+    </div>
+    <div class="from-group mb-2">
+      <label for="suggest">意見反應</label>
+      <textarea name="意見反應" id="suggest" placeholder="請輸入您的意見"></textarea>
+    </div>
+    <input type="checkbox" class="mb-5">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+    <div class="from-group-btn">
+      <input type="submit" class="submit" value="確認送出">
+    </div>
 
-      <li class="mb-2">意見反應<br>
-        <!-- <input type="text" placeholder="請輸入您的意見"> -->
-        <textarea name="意見反應" id="" cols="98" rows="5" placeholder="請輸入您的意見"></textarea>
-      </li>
-    </ul>
-    <input type="checkbox" name="" id="" class="mb-5">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
-    <input type="submit" value="確認送出" class="submit">
-  </div>
+</div>
+
+</form>
 </div>
 
     <footer class="footer">
