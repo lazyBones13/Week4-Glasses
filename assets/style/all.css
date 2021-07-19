@@ -222,6 +222,12 @@ h2 {
   .header li a:hover {
     color: silver; }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 39px; }
+    .header li a {
+      padding: 9px 10px; } }
+
 /* content */
 .banner {
   height: 840px;
@@ -239,6 +245,15 @@ h2 {
     display: block;
     font-size: 64px;
     font-weight: bold; }
+
+@media (max-width: 768px) {
+  .banner-title {
+    max-width: 690px;
+    margin: 0 auto; }
+    .banner-title h3 {
+      font-size: 20px; }
+    .banner-title span {
+      font-size: 48px; } }
 
 .service-content {
   background: #aa06010d;
@@ -262,6 +277,26 @@ h2 {
     -moz-text-align-last: left;
          text-align-last: left; }
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px; }
+  .container {
+    width: 690px;
+    margin: 0 auto; }
+  .service-content {
+    padding: 40px 0 56px 0; }
+    .service-content .service-content-cardList {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 40px; }
+    .service-content .service-content-card {
+      margin: 0 30px 32px 30px; }
+    .service-content .service-content-card:nth-child(4) {
+      margin-right: 30px; } }
+
 .classic-products {
   padding: 60px 0 80px 0; }
   .classic-products ul {
@@ -282,13 +317,42 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 30px;
-    line-height: 48px;
+    line-height: 44px;
     color: #aa0601; }
     .classic-products .classic-product-List .text img {
       width: 44px;
       height: 44px; }
     .classic-products .classic-product-List .text p {
       margin-left: 10px; }
+
+@media (max-width: 768px) {
+  .classic-products {
+    padding: 40px 0 56px 0; }
+    .classic-products ul {
+      margin-top: 32px; }
+    .classic-products .classic-product-List:nth-child(2) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .classic-products .classic-product-List:nth-child(2) .text {
+        margin-right: 0; }
+    .classic-products .classic-product-List > img {
+      width: 390px;
+      height: 168px; }
+    .classic-products .classic-product-List .text {
+      font-size: 28px;
+      font-style: italic;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 30px;
+      line-height: 40px;
+      color: #aa0601; }
+      .classic-products .classic-product-List .text img {
+        width: 40px;
+        height: 40px; }
+      .classic-products .classic-product-List .text p {
+        margin-left: 8px; } }
 
 .design-products {
   padding: 60px 0 80px 0;
@@ -315,6 +379,32 @@ h2 {
     opacity: 0.6;
     background-image: url(../images/product-9.png); }
 
+@media (max-width: 768px) {
+  .design-products {
+    padding: 40px 0 56px 0;
+    height: 452px;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .design-products h2 {
+      color: #fff;
+      margin-bottom: 32px; }
+    .design-products h3 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #aa0601; }
+    .design-products .bg-green {
+      width: 330px;
+      height: 278px;
+      opacity: 0.6;
+      background-image: url(../images/product-8.png); }
+    .design-products .bg-pink {
+      width: 330px;
+      height: 278px;
+      opacity: 0.6;
+      background-image: url(../images/product-9.png); } }
+
 .recommend {
   padding: 60px 0 80px 0; }
   .recommend .recommend-cardList {
@@ -337,6 +427,36 @@ h2 {
     font-size: 14px; }
   .recommend .date {
     color: #707070; }
+
+@media (max-width: 768px) {
+  .recommend {
+    padding: 40px 0 56px 0; }
+    .recommend .recommend-cardList {
+      margin-top: 32px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .recommend .recommend-card {
+      width: 330px;
+      height: 460px;
+      border: 1px solid #dee2e6;
+      -webkit-box-shadow: 0 2px 6px #dee2e6;
+              box-shadow: 0 2px 6px #dee2e6;
+      margin-bottom: 32px; }
+      .recommend .recommend-card img {
+        display: block;
+        width: 330px;
+        height: 256px; }
+    .recommend .recommend-card-body {
+      padding: 16px 24px; }
+      .recommend .recommend-card-body div {
+        height: 151px; }
+    .recommend .recommend-card-body h4 {
+      font-size: 14px; }
+    .recommend .date {
+      color: #707070; } }
 
 .contact-us {
   padding: 60px 0 80px 0;
@@ -373,6 +493,46 @@ h2 {
     background-color: #e67e22;
     color: #fff; }
 
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 40px 0 56px 0;
+    background-color: #aa06010d; }
+    .contact-us .wrap {
+      max-width: 450px;
+      margin: 0 auto; }
+    .contact-us label {
+      display: block;
+      margin-bottom: 3px; }
+    .contact-us .from-group input {
+      width: 100%;
+      height: 50px;
+      padding: 8px 12px; }
+    .contact-us p {
+      font-size: 16px;
+      margin-top: 24px;
+      margin-bottom: 16px; }
+    .contact-us textarea {
+      padding: 8px 12px;
+      width: 100%;
+      height: 136px; }
+    .contact-us .checkbox {
+      margin-bottom: 20px; }
+    .contact-us span {
+      font-size: 14px; }
+    .contact-us .from-group-btn {
+      width: 350px;
+      height: 54px;
+      margin: 0 auto; }
+    .contact-us .submit {
+      width: 350px;
+      height: 54px;
+      background-color: #aa0601;
+      color: #fff;
+      border: none; }
+    .contact-us .submit:hover {
+      background-color: #e67e22;
+      color: #fff; } }
+
 /* footer */
 .footer {
   background-color: #aa0601;
@@ -402,5 +562,30 @@ h2 {
     font-size: 14px; }
   .footer .footer-legal-links li {
     margin-left: 48px; }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 39px 21px 41px; }
+    .footer .footer-menu-nav li a {
+      padding: 0px 20px; }
+    .footer .footer-social-media li {
+      margin-left: 24px;
+      width: 24px;
+      height: 24px; }
+    .footer .footer-contact {
+      font-size: 20px; }
+      .footer .footer-contact li {
+        line-height: 24px;
+        margin-bottom: 12px; }
+    .footer .footer-contact img {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px; }
+    .footer .footer-legal {
+      width: 690px;
+      padding-top: 24px;
+      margin-top: 8px; }
+    .footer .footer-legal-links li {
+      margin-left: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
