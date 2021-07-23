@@ -552,7 +552,10 @@ h2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%; }
     .header .logo a {
       width: 48px;
       height: 29px;
