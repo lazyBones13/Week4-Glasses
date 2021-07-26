@@ -1,0 +1,43 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container">
+    <h1 class="location-h1">門市據點</h1>
+    <div class="dropdown">
+        <label for="location" class="">選擇地區</label>
+        <select name="location" id="location" class="location-select">
+            <option value="台北市">台北市</option>
+            <option value="台中市">台中市</option>
+            <option value="台南市">台南市</option>
+        </select>
+    </div>
+    <ul class="address-list d-flex justify-content-between">
+        <li class="address-item">
+            <img src="./assets/images/locate1.jpeg" class="address-item-pic" alt="門市據點">
+            <div class="address-item-info">
+                <h3 class="address-name">台北中山旗艦店</h3>
+                <ul class="address-info-text">
+                    <li class="address-phone mb-1 d-flex align-items-center">
+                        <img src="./assets/images/icon-phone-black.svg" alt="電話">
+                        <span>電話：(02)000-1234</span>
+                    </li>
+                    <li class="address-clock mb-1 d-flex align-items-center">
+                        <img src="./assets/images/icon-clock-black.svg" alt="營業時間">
+                        <span>營業時間：10:00-21:00</span>
+                    </li>
+                    <li class="address-address d-flex ">
+                        <img src="./assets/images/icon-map.svg " alt="地址">
+                        <span>地址：台北市中山區南京東路25巷2-1號</span>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="address-map">
+            <img src="./assets/images/location-map.png" alt="">
+        </li>
+    </ul>
+</div>

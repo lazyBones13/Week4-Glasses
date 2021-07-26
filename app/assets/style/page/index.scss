@@ -1,0 +1,412 @@
+.banner {
+  height: 840px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .banner-title {
+    color: #650300;
+    text-align: right;
+    width: 100%;
+    @include pad {
+      width: 690px;
+    }
+    @include mobile {
+      position: absolute;
+      right: 0;
+    }
+  }
+  h3 {
+    font-size: 36px;
+    @include pad {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  span {
+    display: block;
+    font-size: 64px;
+    font-weight: bold;
+    @include pad {
+      font-size: 48px;
+    }
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+}
+.service-content {
+  background: #aa06010d;
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 32px 0 40px 0;
+  }
+  .service-content-cardList {
+    margin-top: 48px;
+    @include pad {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+  }
+  .service-content-card {
+    width: 25%;
+    margin-right: 30px;
+    text-align: center;
+    @include pad {
+      margin: 0 30px 32px 30px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .service-content-card:nth-child(4) {
+    margin-right: 0;
+    @include pad {
+      margin-right: 30px;
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $secondary-color;
+  }
+  p {
+    text-align: left;
+    margin: 0 auto;
+    @include mobile {
+      width: 255px;
+    }
+  }
+}
+
+.classic-products {
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 32px 0 40px 0;
+  }
+  .classic-product-List {
+    margin-top: 40px;
+    @include pad {
+      margin-top: 32px;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+  .classic-product:nth-child(2) {
+    flex-direction: row-reverse;
+    @include pad {
+      flex-direction: row;
+    }
+    .text {
+      margin-right: 30px;
+      @include pad {
+        margin-right: 0;
+      }
+    }
+  }
+  .classic-product {
+    @include mobile {
+      position: relative;
+      width: 100%;
+    }
+  }
+  .classic-product > img {
+    width: 635px;
+    height: 320px;
+    @include pad {
+      width: 390px;
+      height: 168px;
+    }
+  }
+  .classic-product .text {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+    line-height: 44px;
+    color: $primary-color;
+    @include pad {
+      font-size: 28px;
+      line-height: 40px;
+      color: $primary-color;
+    }
+    @include mobile {
+      position: absolute;
+      left: 50px;
+    }
+    img {
+      width: 44px;
+      height: 44px;
+      @include pad {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    p {
+      margin-left: 10px;
+      @include pad {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+.design-products {
+  padding: 60px 0 80px 0;
+  background-image: url(../images/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile() {
+    padding: 32px 0 40px 0;
+  }
+  h2 {
+    color: #fff;
+  }
+  .design-pics {
+    margin-top: 40px;
+  }
+  h3 {
+    font-size: 72px;
+    font-weight: bold;
+    color: $primary-color;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    @include pad {
+      font-size: 32px;
+      position: absolute;
+      left: 105px;
+      top: 124px;
+    }
+    @include mobile {
+      font-size: 32px;
+      position: absolute;
+      left: 105px;
+      top: 124px;
+    }
+  }
+  .design-pics {
+    @include pad {
+      margin-top: 32px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  }
+  .bg-green {
+    width: 48.5%;
+    position: relative;
+    @include pad {
+      width: 48.5%;
+      position: relative;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  .bg-pink {
+    width: 48.5%;
+    position: relative;
+    @include pad {
+      width: 48.5%;
+      position: relative;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .bg-green:before {
+    width: 100%;
+    height: 99%;
+    content: '';
+    background-color: #1dd1a1;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bg-pink:before {
+    width: 100%;
+    height: 99%;
+    content: '';
+    background-color: #fda7df;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.recommend {
+  padding: 60px 0 80px 0;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 32px 0 40px 0;
+  }
+  .recommend-cardList {
+    margin-top: 40px;
+    @include pad {
+      margin-top: 32px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+  .recommend-card {
+    width: 255px;
+    height: 460px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 6px #dee2e6;
+    border-radius: 5px;
+    @include pad {
+      width: 330px;
+      margin-bottom: 32px;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    img {
+      display: block;
+      width: 255px;
+      height: 256px;
+      object-fit: cover;
+      @include pad {
+        width: 330px;
+        height: 256px;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  .recommend-card-body {
+    padding: 16px;
+    @include pad {
+      padding: 16px 24px;
+    }
+    div {
+      height: 151px;
+    }
+  }
+  .recommend-card-body h4 {
+    font-size: 14px;
+  }
+  .date {
+    color: #707070;
+  }
+}
+
+.contact-us {
+  padding: 60px 0 80px 0;
+  background-color: #aa06010d;
+  @include pad {
+    padding: 40px 0 56px 0;
+  }
+  @include mobile {
+    padding: 32px 0 40px 0;
+  }
+  .wrap {
+    max-width: 730px;
+    margin: 0 auto;
+    @include pad {
+      max-width: 450px;
+    }
+    @include mobile {
+      max-width: 345px;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: 4px;
+    @include pad {
+      margin-bottom: 3px;
+    }
+  }
+  .from-group input {
+    width: 100%;
+    height: 50px;
+    padding: 12px 16px;
+    @include pad {
+      padding: 8px 12px;
+    }
+  }
+  .from-group {
+    @include mobile {
+      margin-bottom: 8px;
+    }
+  }
+  p {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    @include pad {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  textarea {
+    padding: 12px 16px;
+    width: 100%;
+    height: 136px;
+    @include pad {
+      padding: 8px 12px;
+    }
+  }
+  .checkbox {
+    @include pad {
+      margin-bottom: 20px;
+    }
+  }
+  span {
+    @include pad {
+      font-size: 14px;
+    }
+  }
+  .checkbox label {
+    margin-left: 4px;
+    margin-bottom: 0;
+  }
+  .submit {
+    width: 50%;
+    padding: 16px 143px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .submit:hover {
+    background-color: #8f0400;
+    color: #fff;
+  }
+}

@@ -1,0 +1,62 @@
+.address-list {
+  margin-bottom: 160px;
+  @include pad {
+    flex-wrap: wrap;
+  }
+  .address-item {
+    width: 445px;
+    @include pad {
+      width: 100%;
+      display: flex;
+      margin-bottom: 32px;
+    }
+  }
+  .address-item-pic {
+    width: 100%;
+    @include pad {
+      width: 48%;
+      height: 162px;
+      margin-right: 30px;
+    }
+  }
+  .address-item-info {
+    border: 1px solid #00000020;
+    @include pad {
+      width: 48%;
+    }
+  }
+  .address-name {
+    font-size: 24px;
+    border-bottom: 1px solid #00000020;
+    padding: 12px 24px;
+    @include pad {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  .address-info-text {
+    font-size: 20px;
+    padding: 16px 24px;
+    @include pad {
+      font-size: 14px;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin-right: 8px;
+    }
+  }
+  .address-map {
+    width: 635px;
+    @include pad {
+      width: 100%;
+    }
+    img {
+      height: 100%;
+      @include pad {
+        width: 100%;
+      }
+    }
+  }
+}

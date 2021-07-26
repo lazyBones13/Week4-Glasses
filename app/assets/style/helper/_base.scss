@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px; // (1110 + 30 gutter)
+  margin: 0 auto;
+  padding: 0 15px;
+  @include pad() {
+    width: 720px; // (690 + 30 gutter)
+    margin: 0 auto;
+  }
+  @include mobile() {
+    max-width: 375px; // (345 + 30 gutter)
+    margin: 0 auto;
+  }
+}
+
+h2 {
+  color: $secondary-color;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  @include pad() {
+    font-size: 32px;
+  }
+  @include mobile() {
+    font-size: 24px;
+  }
+}
