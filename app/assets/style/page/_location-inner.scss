@@ -3,12 +3,19 @@
   @include pad {
     flex-wrap: wrap;
   }
+  @include mobile {
+    margin-bottom: 56px;
+  }
   .address-item {
     width: 445px;
     @include pad {
       width: 100%;
       display: flex;
       margin-bottom: 32px;
+    }
+    @include mobile {
+      flex-direction: column;
+      margin-bottom: 16px;
     }
   }
   .address-item-pic {
@@ -18,11 +25,18 @@
       height: 162px;
       margin-right: 30px;
     }
+    @include mobile {
+      width: 100%;
+      object-fit: cover;
+    }
   }
   .address-item-info {
     border: 1px solid #00000020;
     @include pad {
       width: 48%;
+    }
+    @include mobile {
+      width: 100%;
     }
   }
   .address-name {
@@ -32,6 +46,7 @@
     @include pad {
       font-size: 16px;
       padding: 8px 16px;
+      font-weight: bold;
     }
   }
   .address-info-text {
