@@ -114,8 +114,10 @@
     }
     .blog__btn {
       justify-content: flex-end;
-      margin-top: -20px;
-      margin-right: 40px;
+      @include pad {
+        margin-top: -20px;
+        margin-right: 40px;
+      }
     }
     a {
       color: #650300;
