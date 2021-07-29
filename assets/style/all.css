@@ -843,9 +843,11 @@ h2 {
     .blog__content .blog__cardList .blog__btn {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end;
-      margin-top: -20px;
-      margin-right: 40px; }
+              justify-content: flex-end; }
+      @media (max-width: 992px) {
+        .blog__content .blog__cardList .blog__btn {
+          margin-top: -20px;
+          margin-right: 40px; } }
     .blog__content .blog__cardList a {
       color: #650300;
       font-size: 36px;
