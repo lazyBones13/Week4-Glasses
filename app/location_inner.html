@@ -6,7 +6,7 @@ current: index
 ---
 
 <div class="container">
-    <h1 class="location-h1">門市據點</h1>
+    <h2 class="location-h2">門市據點</h2>
     <div class="dropdown">
         <label for="location" class="">選擇地區</label>
         <select name="location" id="location" class="location-select">
@@ -15,8 +15,8 @@ current: index
             <option value="台南市">台南市</option>
         </select>
     </div>
-    <ul class="address-list d-flex justify-content-between">
-        <li class="address-item">
+    <div class="address-list d-flex justify-content-between">
+        <div class="address-item">
             <img src="./assets/images/locate1.jpeg" class="address-item-pic" alt="門市據點">
             <div class="address-item-info">
                 <h3 class="address-name">台北中山旗艦店</h3>
@@ -35,9 +35,12 @@ current: index
                     </li>
                 </ul>
             </div>
-        </li>
-        <li class="address-map">
-            <img src="./assets/images/location-map.png" alt="">
-        </li>
-    </ul>
+        </div>
+        <div class="address-map">
+            <!-- <img src="./assets/images/location-map.png" alt=""> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0164724048163!2d121.56166261537867!3d25.033515044464068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x38e2937e0364cd0a!2zUmVkTGluZSBUYWl3YW4gVGFpcGVpIDEwMSDnsr7lk4Hlupc!5e0!3m2!1szh-TW!2stw!4v1628327610415!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 </div>

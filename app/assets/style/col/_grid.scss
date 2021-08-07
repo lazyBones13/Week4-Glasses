@@ -1,0 +1,11 @@
+.container {
+  max-width: 1140px; // (1110 + 30 gutter)
+  margin: 0 auto;
+  padding: 0 15px;
+  @include pad() {
+    max-width: 720px; // (690 + 30 gutter)
+  }
+  @include mobile() {
+    max-width: 375px; // (345 + 30 gutter)
+  }
+}

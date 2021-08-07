@@ -1,11 +1,8 @@
+/* 全站樣式 */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.text-center {
-  text-align: center;
 }
 
 body {
@@ -13,18 +10,14 @@ body {
   line-height: 1.5;
 }
 
-.container {
-  max-width: 1140px; // (1110 + 30 gutter)
-  margin: 0 auto;
-  padding: 0 15px;
-  @include pad() {
-    width: 720px; // (690 + 30 gutter)
-    margin: 0 auto;
-  }
-  @include mobile() {
-    max-width: 375px; // (345 + 30 gutter)
-    margin: 0 auto;
-  }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 h2 {

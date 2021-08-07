@@ -17,13 +17,15 @@
   @include mobile {
     padding: 28px 0 56px 0;
   }
-  .blog__h1 {
+  .blog__h2 {
     font-size: 48px;
     line-height: 80px;
     border-left: 8px solid #9f1213;
     font-weight: bold;
     padding-left: 16px;
     margin-bottom: 60px;
+    text-align: left;
+    color: #000;
     @include pad {
       border-left: 4px solid #9f1213;
       margin-bottom: 40px;
@@ -114,9 +116,11 @@
     }
     .blog__btn {
       justify-content: flex-end;
+      text-transform: uppercase;
       @include pad {
         margin-top: -20px;
         margin-right: 40px;
+        text-transform: none;
       }
     }
     a {
